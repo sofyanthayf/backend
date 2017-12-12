@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$config['base_url'] = 'https://backend.kharisma.ac.id/';
+$config['base_url'] = 'https://backend.kharisma.ac.id';
 
 $config['index_page'] = '';
 
