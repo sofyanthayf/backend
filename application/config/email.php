@@ -2,8 +2,8 @@
 
 
 $config['smtp_host'] = 'ssl://smtp.gmail.com';
-$config['smtp_user'] = 'sofyan.thayf@kharisma.ac.id';
-$config['smtp_pass'] = 'SitiMaryam';
+$config['smtp_user'] = 'backend@kharisma.ac.id';
+$config['smtp_pass'] = 'BEnd_BA20';
 // $config['smtp_user'] = 'layanan_pmb@kharisma.ac.id';
 // $config['smtp_pass'] = 'AndiTenri25';
 
