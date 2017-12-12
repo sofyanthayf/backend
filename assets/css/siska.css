@@ -1,0 +1,16 @@
+body {
+  background-color: #ddeeff;
+}
+.navbar-inverse {
+  background-color: #020255;
+  border-color: #080808;
+}
+
+.side-nav {
+  background-color: #02025e;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #020255;
+}
