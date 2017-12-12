@@ -9,7 +9,7 @@ $config['smtp_pass'] = 'SitiMaryam';
 
 $config['useragent'] = 'SISKA 4.0 Mailer';
 $config['protocol'] = 'smtp';
-$config['smtp_port'] = 587;
+$config['smtp_port'] = 465;
 
 $config['smtp_timeout'] = 5;
 $config['wordwrap'] = TRUE;
