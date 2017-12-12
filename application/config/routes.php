@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'rest_server';
+$route['default_controller'] = 'sendmail';
 $route['rest_server'] = 'rest_server';
 
 $route['mailme'] = 'sendmail';
