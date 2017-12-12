@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'sendmail';
 $route['rest_server'] = 'rest_server';
 
 $route['mailme'] = 'sendmail';
@@ -10,6 +9,7 @@ $route['mailme'] = 'sendmail';
 
 
 
+$route['default_controller'] = 'frontpage';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
