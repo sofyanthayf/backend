@@ -5,7 +5,7 @@ class Sendmail extends CI_Controller {
 
 	public function index()
 	{
-		$this->email->from('sofyan.thayf@kharisma.ac.id');
+		$this->email->from('sofyan.thayf@kharisma.ac.id', 'Sofyan Thayf');
 		$this->email->to('sofyanthayf@gmail.com');
 		$this->email->subject('Test email from CI and Gmail');
 		$this->email->message('This is a test.');
