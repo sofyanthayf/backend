@@ -4,6 +4,8 @@
 $config['smtp_host'] = 'ssl://smtp.gmail.com';
 $config['smtp_user'] = '#########@kharisma.ac.id';
 $config['smtp_pass'] = '*********';
+// $config['smtp_user'] = 'backend@kharisma.ac.id';
+// $config['smtp_pass'] = 'BEnd_BA20';
 
 $config['useragent'] = 'SISKA 4.0 Mailer';
 $config['protocol'] = 'smtp';
