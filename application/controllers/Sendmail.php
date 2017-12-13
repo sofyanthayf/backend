@@ -22,14 +22,14 @@ class Sendmail extends REST_Controller {
 
 			if ( ! $this->email->send() )	{
 
-				$thid->set_response($this->email->get_debugger_messages(), 502);
+				$thid->set_response($this->email->get_debugger_messages(), 409);
 				$this->email->clear_debugger_messages();
 
 			}	else {
 
 				$this->set_response([ 'status' => TRUE,
 															'message' => 'Email Sent'
-														], REST_Controller::HTTP_OK );
+														], 201 );
 
 			}
 
