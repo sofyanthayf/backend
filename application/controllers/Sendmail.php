@@ -13,7 +13,7 @@ class Sendmail extends REST_Controller {
 	}
 
 
-	function index_post(){
+	function index_get(){
 
 			$this->email->from('siska@kharisma.ac.id', 'SISKA');
 			$this->email->to('sofyanthayf@gmail.com');
