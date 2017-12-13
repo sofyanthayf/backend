@@ -16,10 +16,10 @@ class Sendmail extends REST_Controller {
 	}
 
 	function mailme_post(){
-
-			$email = $this->input->post('to_email');
-			$message = $this->input->post('message');
-			$subject = $this->input->post('subject');
+var_dump($this->post());
+			$email = $this->post('to_email');
+			$message = $this->post('message');
+			$subject = $this->post('subject');
 
 			$this->email->from('siska@kharisma.ac.id', 'SISKA');
 			$this->email->to('sofyan.thayf@yahoo.com');

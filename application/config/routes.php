@@ -5,7 +5,7 @@ $route['default_controller'] = 'rest_server';
 
 $route['rest_server'] = 'rest_server';
 
-$route['mailme']['post'] = 'sendmail/mailme';
+$route['mailme'] = 'sendmail/mailme';
 
 
 
