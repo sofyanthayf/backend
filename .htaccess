@@ -1,5 +1,7 @@
-Options -Indexes
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^backend.kharisma.ac.id$ [NC]
+# RewriteRule ^(.)$ http://www.domain.com/$1 [R=301,L]
+RewriteCond %{QUERY_STRING} ^(ACT=.)$ [NC]
+RewriteRule ^(.)$ index.php?%1 [L]
+RewriteCond $1 !^(images|css|style.css|favicon.ico|robots.txt|index.php) [NC]
+RewriteRule ^(.) /index.php?/$1 [L]
