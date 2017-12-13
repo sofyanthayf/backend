@@ -12,6 +12,8 @@ class Sendmail extends REST_Controller {
 			parent::__construct();
 	}
 
+	function index_get(){
+	}
 
 	function mailme_post(){
 
