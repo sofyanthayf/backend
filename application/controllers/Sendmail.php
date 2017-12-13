@@ -9,9 +9,7 @@ class Sendmail extends CI_Controller {
 		$this->email->to('sofyanthayf@gmail.com');
 		$this->email->subject('Test email from CI and Gmail');
 		$this->email->message('This is a test.');
-		$this->email->send();
 
-		// $this->load->view('sendmail');
 		if ( ! $this->email->send() )	{
 			echo 'Failed';
 
