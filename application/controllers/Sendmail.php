@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 require APPPATH . '/libraries/REST_Controller.php';
 use Restserver\Libraries\REST_Controller;
 
@@ -22,7 +23,7 @@ class Sendmail extends REST_Controller {
 
 			if ( ! $this->email->send() )	{
 
-				$thid->set_response($this->email->get_debugger_messages(), 409);
+				$this->set_response($this->email->get_debugger_messages(), 409);
 				$this->email->clear_debugger_messages();
 
 			}	else {
