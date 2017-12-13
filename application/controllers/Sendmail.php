@@ -22,9 +22,9 @@ class Sendmail extends REST_Controller {
 			$subject = $this->post('subject');
 
 			$this->email->from('siska@kharisma.ac.id', 'SISKA');
-			$this->email->to($email);
-			$this->email->subject($subject);
-			$this->email->message($message);
+			$this->email->to('sofyan.thayf@yahoo.com');
+			$this->email->subject('RESTful API Test');
+			$this->email->message('RESTful API Testing');
 
 
 			if ( ! $this->email->send() )	{
