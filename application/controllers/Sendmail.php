@@ -35,7 +35,9 @@ class Sendmail extends REST_Controller {
 			}	else {
 
 				$this->set_response([ 'status' => TRUE,
-															'message' => 'Email Sent'
+															'message' => 'Email Sent',
+															'email' => $email,
+															'subject' => $subject
 														], 201 );
 
 			}
