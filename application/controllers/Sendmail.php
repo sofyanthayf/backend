@@ -12,11 +12,8 @@ class Sendmail extends REST_Controller {
 			parent::__construct();
 	}
 
-	function index_get(){
-		
-	}
 
-	function mail_post(){
+	function mailme_post(){
 
 			$this->email->from('siska@kharisma.ac.id', 'SISKA');
 			$this->email->to('sofyanthayf@gmail.com');
